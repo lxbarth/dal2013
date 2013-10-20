@@ -16,6 +16,7 @@ Taller 1: Qué demonios es OpenStreetMap?
 - https://www.mapbox.com/tour/
 - http://opencitiesproject.com/
 - http://8bitcity.com/map
+- http://maps.stamen.com/watercolor/#12/37.7706/-122.3782
 - http://hot.openstreetmap.org/
 - http://open.mapquest.com/
 - https://www.mapbox.com/blog/nyc-and-openstreetmap-cooperating-through-open-data/
@@ -34,7 +35,11 @@ Taller 2: Crear mapas bonitos y rápidos para web y móvil con MapBox
 - https://www.mapbox.com/tour/
 - https://www.mapbox.com/plans/
 - http://geojson.io/
+- https://www.mapbox.com/mapbox.js/api/v1.3.1/
 - http://infoamazonia.org/es
+- http://www.qgis.org/en/site/
+- https://www.mapbox.com/tilemill/
+- https://www.mapbox.com/blog/create-a-custom-map-of-your-city-in-30-minutes-with-tilemill-and-openstreetmap/
 
 *simple.html*
 
