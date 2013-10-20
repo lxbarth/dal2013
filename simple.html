@@ -1,0 +1,27 @@
+<Html>
+<Head>
+  <Link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
+  <!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' />
+  <![endif]-->
+  <Script src='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></Script>
+  <Style>
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  }
+  </Style>
+</Head>
+<Body>
+  <Div id='map' class='dark'></Div>
+  <Script type='text/javascript'>
+  var map = L.mapbox.map('map', 'lxbarth.map-lxoorpwz')
+      .setView([37.9, -77], 5);
+  </Script>
+</Body>
+</Html>
