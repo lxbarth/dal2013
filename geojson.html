@@ -21,19 +21,23 @@
 <Body>
   <Div id='map' class='dark'></Div>
   <Script type='text/javascript'>
-    var map = L.mapbox.map('map', 'lxbarth.map-lxoorpwz')
-      .setView([37.9, -77], 15);
-    new L.Hash(map);
-    var xhr = new XMLHttpRequest();
-    xhr.onload = function(e) {
-        var geojson = L.geoJson(JSON.parse(xhr.response), {
-            onEachFeature: function(feature, layer) {
-                layer.bindPopup(JSON.stringify(feature.properties.stop));
-            }
-        }).addTo(map);
-    };
-    xhr.open('GET', '/map.geojson');
-    xhr.send();
+        var map = L.mapbox.map('map', 'lxbarth.map-lxoorpwz')
+                            .setView([38.9135, -77.0290], 15);
+        new L.Hash(map);
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function(e) {
+            var geojson = L.geoJson(JSON.parse(xhr.response), {
+                onEachFeature: function(feature, layer) {
+                    if (feature.properties.address) {
+                        layer.bindPopup(feature.properties.name + ' / ' + feature.properties.address);
+                    } else {
+                        layer.bindPopup("Nombre: " + feature.properties.name);
+                    }
+                }
+            }).addTo(map);
+        };
+        xhr.open('GET', '/map.geojson');
+        xhr.send();
   </Script>
 </Body>
 </Html>
